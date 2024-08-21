@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "dist",
+    "public": "./minideiablog/dist",
     "ignore": [
       "firebase.json",
       "**/.*",
