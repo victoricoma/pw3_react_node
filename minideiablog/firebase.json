@@ -8,8 +8,8 @@
     ],
     "rewrites": [
       {
-        "source": "**",
-        "destination": "/index.html"
+        "source": "./minideiablog/dist/**",
+        "destination": "./minideiablog/dist/index.html"
       }
     ]
   }
