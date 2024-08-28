@@ -10,9 +10,16 @@ jobs:
   build_and_deploy:
     runs-on: ubuntu-latest
     steps:
-      - script: 'cd ./minideiablog'
+      # Checkout the repository
       - uses: actions/checkout@v4
-      - run: npm ci && npm run build
+
+      # Navigate to the project directory and install dependencies
+      - run: |
+          cd ./minideiablog
+          npm ci
+          npm run build
+
+      # Deploy to Firebase Hosting
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: ${{ secrets.GITHUB_TOKEN }}
