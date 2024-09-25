@@ -1,8 +1,8 @@
-import { db } from '../firebase'
+import { db } from './../firebase/config'
 import {
     getAuth,
     createUserWithEmailAndPassword,
-    signInWithEmailAndPassaword,
+    signInWithEmailAndPassword,
     updateProfile,
     signOut
 } from 'firebase/auth'
@@ -66,7 +66,7 @@ export const useAuthentication = () => {
         setError(false)
 
         try {
-            await signInWithEmailAndPassaword(
+            await signInWithEmailAndPassword(
                 auth,
                 data.email,
                 data.password
