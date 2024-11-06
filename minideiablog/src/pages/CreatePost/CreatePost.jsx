@@ -1,4 +1,4 @@
-import style from './CreatePost.module.css'
+import styles from './CreatePost.module.css'
 import { useState } from 'react'
 import { useInsertDocument } from '../../hooks/useInsertDocument'
 import { useNavigate } from 'react-router-dom'
@@ -11,7 +11,7 @@ const CreatePost = () => {
   const [tags, setTags] = useState([])
   const [forms, setForms] = useState("")
   const [formError, setFormError] = useState()
-  const { user } = useAuthvalue()
+  const { user } = useAuthValue()
   const navigate = useNavigate()
 
   const { insertDocument, response } = useInsertDocument("posts")
