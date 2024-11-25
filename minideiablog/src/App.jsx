@@ -12,6 +12,8 @@ import CreatePost from './pages/CreatePost/CreatePost'
 import Register from './pages/Register/Register'
 import Post from './pages/Post/Post'
 import About from './pages/About/About'
+import Search from './pages/Search/Search'
+import EditPost from './pages/EditPost/EditPost'
 import loading from '/loading.gif'
 import { useEffect, useState } from 'react'
 
