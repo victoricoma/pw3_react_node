@@ -44,14 +44,14 @@ function App() {
               <Route path="/" element={<Home />} />
               <Route path="/about" element={<About />} />
               <Route
-                path="/posts/create"
+                path="/post/create"
                 element={user ? <CreatePost /> : <Navigate to="/login" />}
               />
               <Route
-                path="/posts/edit/:id"
+                path="/post/edit/:id"
                 element={user ? <EditPost /> : <Navigate to="/login" />}
               />
-              <Route path="/posts/:id" element={<Post />} />
+              <Route path="/post/:id" element={<Post />} />
               <Route path="/search" element={<Search />} />
               <Route
                 path="/login"
