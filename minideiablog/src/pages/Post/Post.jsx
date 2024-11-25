@@ -1,5 +1,5 @@
 import styles from './Post.module.css'
-import { useFethDocument } from '../../hooks/useFetchDocument'
+import { useFetchDocument } from '../../hooks/useFetchDocument'
 import { useParams } from 'react-router-dom'
 
 const Post = () => {

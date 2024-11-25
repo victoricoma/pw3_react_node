@@ -14,6 +14,7 @@ import Post from './pages/Post/Post'
 import About from './pages/About/About'
 import Search from './pages/Search/Search'
 import EditPost from './pages/EditPost/EditPost'
+import Dashboard from './pages/Dashboard/Dashboard'
 import loading from '/loading.gif'
 import { useEffect, useState } from 'react'
 
